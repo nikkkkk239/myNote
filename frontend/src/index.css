@@ -1,0 +1,1282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+}
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginContainer .loginBlock{
+    border: 1px solid black;
+    width: 26%;
+    padding: 15px;
+    border-radius: 8px;
+}
+.loginContainer .loginBlock h1{
+    text-align: center;
+    color: rgba(9, 96, 236, 0.845);
+    padding-bottom: 1px;
+    margin-bottom: 18px;
+    padding-top: 5px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.loginContainer .loginBlock .loginInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 25px;
+
+}
+.loginContainer .loginBlock .loginInputs input{
+    line-height: 2;
+    padding: 5px 20px;
+    font-size: 15px;
+    outline: none;
+    color: rgb(109, 109, 109);
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    border-bottom: 2px solid rgba(9, 96, 236, 0.845);
+}
+/* rgb(17, 96, 199) */
+.loginContainer .loginBlock .loginInputs label{
+    margin-bottom: -9px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(9, 96, 236, 0.845);
+}
+.loginContainer .loginBlock .loginInputs .passwordBox{
+    width: 100%;
+    position: relative;
+}
+.loginContainer .loginBlock .loginInputs .passwordBox input{
+    width: 100%;
+    
+}
+.loginContainer .loginBlock .loginInputs .passwordBox .eye{
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(109, 109, 109);
+    font-weight: 700;
+}
+
+.loginContainer .loginBlock .buttons {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 8px;
+}
+.loginContainer .loginBlock .buttons button{
+    width: 100%;
+    line-height: 2.5;
+    font-size: 15px;
+    background-color: rgba(9, 96, 236, 0.845);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.loginContainer .loginBlock .buttons button:hover{
+    background-color: rgb(9, 96, 236);
+}
+
+.loginContainer .loginBlock .errorBox{
+    padding-left: 27px;
+    padding-top: 5%;
+    color: red;
+    font-size: 14px;
+}
+.loginContainer .loginBlock .para{
+    padding-left: 27px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.loginContainer .loginBlock .para span{
+    color: rgba(9, 96, 236, 0.845);
+    cursor: pointer;
+}
+
+@media (max-width:1179px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 30%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+@media (max-width:1033px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 35%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+@media (max-width:911px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 40%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+@media (max-width:770px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 44%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+@media (max-width:684px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 55%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock h1{
+        text-align: center;
+        color: rgba(9, 96, 236, 0.845);
+        padding-bottom: 1px;
+        margin-bottom: 18px;
+        padding-top: 5px;
+        font-size: 37px;
+        font-weight: 500;
+    }
+    .loginContainer .loginBlock .para{
+        font-size: 13px;
+    }
+}
+@media (max-width:537px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 65%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock h1{
+        text-align: center;
+        color: rgba(9, 96, 236, 0.845);
+        padding-bottom: 1px;
+        margin-bottom: 18px;
+        padding-top: 5px;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .loginContainer .loginBlock .para{
+        font-size: 13px;
+    }
+    .loginContainer .loginBlock .buttons button{
+        width: 100%;
+        line-height: 2;
+        font-size: 14.5px;
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock .loginInputs input{
+        line-height: 2;
+        padding: 5px 20px;
+        font-size: 14px;
+        outline: none;
+        color: rgb(109, 109, 109);
+        border-radius: 10px;
+        border: none;
+        font-weight: 400;
+        border-bottom: 2px solid rgba(9, 96, 236, 0.845);
+    }
+}
+@media (max-width:445px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 70%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock h1{
+        text-align: center;
+        color: rgba(9, 96, 236, 0.845);
+        padding-bottom: 1px;
+        margin-bottom: 18px;
+        padding-top: 5px;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .loginContainer .loginBlock .para{
+        font-size: 13px;
+    }
+    .loginContainer .loginBlock .buttons button{
+        width: 100%;
+        line-height: 2;
+        font-size: 14.5px;
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock .loginInputs input{
+        line-height: 2;
+        padding: 5px 20px;
+        font-size: 14px;
+        outline: none;
+        color: rgb(109, 109, 109);
+        border-radius: 10px;
+        border: none;
+        font-weight: 400;
+        border-bottom: 2px solid rgba(9, 96, 236, 0.845);
+    }
+}
+@media (max-width:400px) {
+    .loginContainer .loginBlock{
+        border: 1px solid black;
+        width: 85%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock h1{
+        text-align: center;
+        color: rgba(9, 96, 236, 0.845);
+        padding-bottom: 1px;
+        margin-bottom: 18px;
+        padding-top: 5px;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .loginContainer .loginBlock .para{
+        font-size: 13px;
+    }
+    .loginContainer .loginBlock .buttons button{
+        width: 100%;
+        line-height: 2;
+        font-size: 14.5px;
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock .loginInputs input{
+        line-height: 2;
+        padding: 5px 20px;
+        font-size: 14px;
+        outline: none;
+        color: rgb(109, 109, 109);
+        border-radius: 10px;
+        border: none;
+        font-weight: 400;
+        border-bottom: 2px solid rgba(9, 96, 236, 0.845);
+    }
+}
+@media (max-width:334px) {
+   
+    .loginContainer .loginBlock h1{
+        text-align: center;
+        color: rgba(9, 96, 236, 0.845);
+        padding-bottom: 1px;
+        margin-bottom: 18px;
+        padding-top: 5px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .loginContainer .loginBlock .para{
+        font-size: 12.5px;
+    }
+    .loginContainer .loginBlock .buttons button{
+        width: 100%;
+        line-height: 2;
+        font-size: 14.5px;
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .loginContainer .loginBlock .loginInputs input{
+        line-height: 2;
+        padding: 5px 20px;
+        font-size: 14px;
+        outline: none;
+        color: rgb(109, 109, 109);
+        border-radius: 10px;
+        border: none;
+        font-weight: 400;
+        border-bottom: 2px solid rgba(9, 96, 236, 0.845);
+    }
+}
+/*NavBar Styles*/
+
+.navbar{
+    display: flex;
+    background-color: #F8F9F5;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 41px;
+    align-items: center;
+
+}
+.navbar .logo{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navbar .search{
+    border: 1px solid black;
+    display: flex;
+    
+}
+.navbar .search input{
+    border: none;
+    outline:none;
+    padding-left: 5px;
+}
+.navbar .search .searchButton{
+    background-color: rgba(9, 96, 236, 0.845);
+    border: none;
+    outline: none;
+    padding: 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.navbar .right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navbar .right .initials{
+    background-color: rgba(9, 96, 236, 0.845);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.navbar .importantIcons {
+    display: none;
+
+}
+.navbar .right .yes .logout{
+    color: rgba(9, 96, 236, 0.845);
+    cursor: pointer;
+    font-weight: 500;
+}
+@media (max-width:410px) {
+    .navbar .right .initials{
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+}
+
+
+@media (max-width:600px) {
+    .navbar{
+        display: flex;
+        background-color: #F8F9F5;
+        width: 100%;
+        justify-content: space-between;
+        padding: 11px 38px;
+        align-items: center;
+    
+    }.navbar .search{
+        border: 1px solid black;
+        display: none;
+    }
+    .navbar .right{
+        display: none;
+        gap: 10px;
+        align-items: center;
+    }
+    /* .navbar .menu {
+        display: block;
+        font-size: 20px;
+        background-color: rgba(9, 96, 236, 0.845);
+
+        color: white;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 40px;
+    }
+    .navbar .menu:hover{
+        background-color: rgb(9, 96, 236);
+    } */
+     .navbar .importantIcons{
+        display: flex;
+        gap: 20px;
+
+     }
+     .navbar .importantIcons .menu{
+        display: block;
+        font-size: 20px;
+        background-color: rgba(9, 96, 236, 0.845);
+
+        color: white;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 40px;
+     }
+     .navbar .importantIcons .searchIcon{
+        display: block;
+        font-size: 20px;
+        background-color: rgba(9, 96, 236, 0.845);
+
+        color: white;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 40px;
+     }
+     .navbar .importantIcons .menu:hover{
+        background-color: rgb(9, 96, 236);
+    }
+    .navbar .importantIcons .searchIcon:hover{
+        background-color: rgb(9, 96, 236);
+    }
+    
+}
+@media (max-width:460px) {
+    .navbar .importantIcons{
+        display: flex;
+        gap: 10px;
+
+    }
+    .navbar .importantIcons .menu{
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+
+    }
+    .navbar .importantIcons .searchIcon{
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+
+    }
+    .navbar{
+        display: flex;
+        background-color: #F8F9F5;
+        width: 100%;
+        justify-content: space-between;
+        padding: 11px 30px;
+        align-items: center;
+    }
+}
+@media (max-width:400px) {
+    .navbar{
+        display: flex;
+        background-color: #F8F9F5;
+        width: 100%;
+        justify-content: space-between;
+        padding: 11px 25px;
+        align-items: center;
+    }
+}
+
+
+/*No Notes page*/
+
+.noNotesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    padding: 100px 0px;
+    min-height: 640px;
+}
+.noNotesContainer .noNotesBox{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F8F9F5;
+    align-items: center;
+    padding: 0 5px;
+}
+.noNotesContainer .noNotesBox .error{
+    color: rgba(9, 96, 236, 0.845);
+    font-size: 75px;
+
+}
+.noNotesContainer .noNotesBox p{
+    font-size: 20px;
+}
+.homie{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden ;
+   
+}
+.homie .sideBar{
+    display: none;
+    
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(240px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes slideBack {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(240px);
+    }
+}
+.homie .sideBar .back{
+    animation-name: slideBack;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+}
+
+
+.homie .toast{
+    width: 20%;
+}
+@media (max-width:600px) {
+    .homie .sideBar{
+        display: block;
+        width: 40%;
+        height: 100vh;
+        transform: translateX(240px);
+        position: absolute;
+        right: 0;
+        padding: 40px 25px;
+        z-index: 3;
+        background-color: rgb(9, 96, 236);
+        color: white; 
+    }.homie .sideBar .right{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+
+
+    }
+    .homie .sideBar .cancelBtn{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .homie .sideBar .right .initials{
+        background-color: white;
+        color: rgb(9, 96, 236);
+        width: 40px;
+        font-size: 22px;
+        font-weight: 500;
+
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .homie .sideBar .right .yes{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .homie .sideBar .right .yes .name{
+        font-size: 18px;
+    }
+    .homie .sideBar .right .yes .logout{
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .homie .animate{
+        animation-name: slide;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media (max-width:560px) {
+    .homie .sideBar{
+        width: 45%;
+    }
+}
+@media (max-width:486px) {
+    .homie .sideBar{
+        width: 50%;
+    }
+}
+@media (max-width:402px) {
+    .homie .sideBar{
+        width: 55%;
+    }
+}
+@media (max-width:360px) {
+    .homie .sideBar{
+        width: 60%;
+    }
+}
+@media (max-width:330px) {
+    .homie .sideBar{
+        width: 65%;
+    }
+}
+@media (max-width:307px) {
+    .homie .sideBar{
+        width: 75%;
+    }
+}
+
+
+@media (max-width:1140px) {
+    .homie .toast{
+        width: 30%;
+    }
+}
+@media (max-width:910px) {
+    .homie .toast{
+        width: 35%;
+    }
+}
+@media (max-width:778px) {
+    .homie .toast{
+        width: 40%;
+    }
+}
+@media (max-width:610px) {
+    .homie .toast{
+        width: 45%;
+    }
+}
+@media (max-width:520px) {
+    .homie .toast{
+        width: 53%;
+        position: absolute;
+    }
+}
+@media (max-width:490px) {
+    .homie .toast{
+        display: none;
+    }
+}
+/* @media (max-width:444px) {
+    .homie .toast{
+        width: 53%;
+        position: absolute;
+        top: 590px;
+        left:180px;
+    }
+}
+@media (max-width:432px) {
+    .homie .toast{
+        width: 53%;
+        position: absolute;
+        top: 590px;
+        left:170px;
+    }
+}
+@media (max-width:422px) {
+    .homie .toast{
+        width: 58%;
+        position: absolute;
+        top: 590px;
+        left:160px;
+    }
+}
+@media (max-width:412px) {
+    .homie .toast{
+        width: 63%;
+        position: absolute;
+        top: 590px;
+        left:150px;
+    }
+} */
+.addNoteButton{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    right: 28px;
+    background-color: rgba(9, 96, 236, 0.845);
+    color: white;
+    font-size: 50px;
+    display: flex;
+    bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+@media (max-width:400px) {
+    .addNoteButton{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        right: 28px;
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        font-size: 50px;
+        display: flex;
+        bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    
+    }
+}
+
+.addNoteButton:hover{
+    background-color: rgb(9, 96, 236);
+}
+.searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 0px ;
+}
+.searchContainer .noSearchResult{
+    border: 2px solid black;
+    background-color: #F8F9F5;
+    text-align: center;
+    font-size: 19px;
+    padding: 0px 5px;
+}
+
+.searchContainer .noSearchResult .icon{
+    color: rgb(9, 96, 236);
+    font-size: 75px;
+
+}
+@media (max-width:372px) {
+    .searchContainer .noSearchResult{
+        border: 2px solid black;
+        background-color: #F8F9F5;
+        text-align: center;
+        font-size: 16px;
+        padding: 0px 5px;
+    } 
+    .searchContainer .noSearchResult .icon{
+        color: rgb(9, 96, 236);
+        font-size: 70px;
+    
+    }
+}
+.searchContainer .noSearchResult p span{
+    color: rgb(9, 96, 236);
+}
+.modal{
+    width: 35%;
+    border: none;
+    max-height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    padding: 15px 25px ;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:965px) {
+    .modal{
+        width: 45%;
+        border: none;
+        max-height: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        padding: 15px 25px ;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:740px) {
+    .modal{
+        width: 55%;
+        border: none;
+        max-height: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        padding: 15px 25px ;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:600px) {
+    .modal{
+        width: 65%;
+        border: none;
+        max-height: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        padding: 15px 25px ;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+}
+.add .closeButton{
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in;
+    justify-content: center;
+}
+.add .closeButton:hover{
+    background-color: rgba(9, 96, 236, 0.384);
+    color: white;
+}
+.add p{
+    font-size: 25px;
+    color: rgb(9, 96, 236);
+}
+.add .inputFields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.add .inputFields .title{
+    display: flex;
+    flex-direction: column;
+}
+.add .inputFields .title label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add .inputFields .title input{
+    border: none;
+    outline: none;
+    background-color: #F8F9F5;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid black;
+}
+.add .inputFields .textarea{
+    display: flex;
+    flex-direction: column;
+
+}
+.add .inputFields .textarea label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.add .inputFields .textarea textarea{
+    border: none;
+    outline: none;
+    background-color: #F8F9F5;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.add .inputFields .tags{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.add .inputFields .tags label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add .inputFields .tags .toge{
+    display: flex;
+    justify-content: space-between;
+
+}
+.add .inputFields .tags .selectedTags{
+    line-height: 2;
+    padding: 1px;
+    overflow-y: scroll;
+}
+.add .inputFields .tags .toge input{
+    border: none;
+    outline: none;
+    background-color: #F8F9F5;
+    flex: 1;
+    padding: 5px 10px;
+    width: 80%;
+    font-size: 18px;
+    border: 1px solid black;
+}
+.add .inputFields .tags .toge button{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(9, 96, 236, 0.845);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-left: none;
+
+}
+.add .inputFields .tags .toge button:hover{
+    background-color: rgb(9, 96, 236);
+
+}
+.add .inputFields .tags .selectedTags .addedTag{
+    display: flex;
+    gap: 10px;
+}
+.add .inputFields .tags .selectedTags .addedTag p{
+    background-color: #F8F9F5;
+    font-size: 17px;
+    padding: 2px;
+}
+.add .inputFields .tags .selectedTags .addedTag p .cancel{
+    color: black;
+    margin-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.add .inputFields .tags .error{
+    padding-top: 10px;
+    font-size: 16px;
+    color: red;
+}
+.add button{
+    background-color: rgba(9, 96, 236, 0.845);
+    color: white;
+    border: none;
+    outline :none;
+    padding: 5px 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.add button:hover{
+    background-color:rgb(9, 96, 236);
+}
+
+@media (max-width:500px) {
+    .modal{
+        width: 70%;
+        border: none;
+        max-height: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        padding: 15px 25px ;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .add p{
+        font-size: 22px;
+        color: rgb(9, 96, 236);
+    }
+    .add .inputFields .title label{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .add .inputFields .title input{
+        border: none;
+        outline: none;
+        background-color: #F8F9F5;
+        padding: 5px 10px;
+        font-size: 22px;
+        font-weight: 500;
+        border: 1px solid black;
+    }
+    .add .inputFields .textarea label{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .add .inputFields .textarea textarea{
+        border: none;
+        outline: none;
+        background-color: #F8F9F5;
+        padding: 5px 10px;
+        font-size: 19px;
+        border: 1px solid black;
+    }
+    .add .inputFields .tags label{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .add .inputFields .tags .toge input{
+        border: none;
+        outline: none;
+        background-color: #F8F9F5;
+        flex: 1;
+        padding: 5px 10px;
+        width: 80%;
+        font-size: 16px;
+        border: 1px solid black;
+    }
+    .add .inputFields .tags .toge button{
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: rgba(9, 96, 236, 0.845);
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        border: 1px solid black;
+        border-left: none;
+    
+    }
+    .add .inputFields .tags .selectedTags .addedTag p{
+        background-color: #F8F9F5;
+        font-size: 16px;
+        padding: 2px;
+    }
+    .add .inputFields .tags .selectedTags .addedTag p .cancel{
+        color: black;
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .add button{
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        border: none;
+        outline :none;
+        padding: 5px 0px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+@media (max-width:425px) {
+    .modal{
+        width: 80%;
+        border: none;
+        max-height: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        padding: 15px 25px ;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+.container{
+    min-height: 643px;
+    position: relative;
+}
+.container .addNoteBtn{
+    position: fixed;
+    top: 590px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgba(9, 96, 236, 0.845);
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media (max-width:445px) {
+    .container .addNoteBtn{
+        position: fixed;
+        top: 600px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgba(9, 96, 236, 0.845);
+        color: white;
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+}
+
+.container .addNoteBtn:hover{
+    background-color: rgb(9, 96, 236);
+}
+.container .notesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 35px 45px;
+
+}
+.container .notesContainer .note{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 250px;
+    background-color: #F8F9F5;
+    height: 180px;
+    padding: 10px;
+    gap: 8px;
+    justify-content: space-between;
+    
+}
+.container .notesContainer .note h1{
+    color: rgb(9, 96, 236);
+    font-weight: 500;
+    font-size: 24px;
+
+}
+.container .notesContainer .note .content{
+    word-wrap: break-word;
+    font-size: 18px;
+}
+
+.container .notesContainer .note .tags{
+    display: flex;
+    gap: 8px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+}
+.container .notesContainer .note .tags .tag{
+    background-color: rgb(9, 96, 236);
+    color: white;
+    padding: 4px;
+    font-size: 15px;
+
+}
+
+
+.container .notesContainer .note .buttons{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.container .notesContainer .note .buttons .icon2:hover{
+    color: lightgreen;
+}
+.container .notesContainer .note .buttons .icon1:hover{
+    color: red;
+}
+.container .notesContainer .note .buttons .icon3:hover{
+    color: rgb(9, 96, 236);
+}
+@keyframes moveUp {
+    form{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100px);
+    }
+}
+@keyframes inputFromUp {
+    form{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.navbar .moveUp{
+    animation-name: moveUp;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+}
+.navbar .inputFromUp{
+    background-color: green;
+    position: absolute;
+    width: 50%;
+    border: 1px solid black;
+    transform: translateY(-100px);
+    display: none;
+}
+@media (max-width:600px) {
+    .navbar .inputFromUp{
+        display: block;
+    }
+}
+@media (max-width:344px) {
+    .navbar .inputFromUp{
+        width: 45%;
+    }
+}
+.navbar .inputFromUp input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    line-height: 1.5;
+}
+.navbar .upAni{
+    animation-name: inputFromUp;
+        animation-duration: 400ms;
+        animation-delay: 100ms;
+        animation-fill-mode: forwards;
+}
