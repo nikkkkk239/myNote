@@ -26,7 +26,7 @@ function AddNote({handleModalClose,currentUser,notes,setNotes}) {
       }
       setError("")
       try {
-        const response = await fetch("http://localhost:8000/note/add",{
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}note/addNote`,{
           method:"POST",
           headers:{
             "Content-Type" :"application/json",

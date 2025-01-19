@@ -16,7 +16,7 @@ function Notes({notes,isSearched,noteToBeSearched,setNoteToBeSearched,editNote,s
       return;
     }
     try {
-      const response = await fetch(`http://localhost:8000/note/delete/${id}`,{
+      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}note/delete/${id}`,{
         method:"DELETE",
         headers:{
           "Authorization":`Bearer ${token}`,
@@ -44,7 +44,7 @@ function Notes({notes,isSearched,noteToBeSearched,setNoteToBeSearched,editNote,s
       return;
     }
     try {
-      const response = await fetch(`http://localhost:8000/note/pin-note/${id}`,{
+      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}note/pin-note/${id}`,{
         method:"PUT",
         headers:{
           "Authorization":`Bearer ${token}`,
