@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router();
 const User = require("../model/user")
 const checkAuth = require("../middleware/checkAuth");
-const config = require('../config.json')
+
 const jwt = require('jsonwebtoken')
 
 router.post('/register',async (req,res)=>{
@@ -27,7 +27,7 @@ router.post('/register',async (req,res)=>{
         email,
         password
     })
-    const token = jwt.sign({ id: user._id },config.privateKey, { expiresIn: '1d' });
+    const token = jwt.sign({ id: user._id },process.env.privateKey, { expiresIn: '1d' });
     return res.status(200).json({err:false,token,message:"User created ."})
 
 })
@@ -49,7 +49,7 @@ router.post('/login',async(req,res)=>{
         return res.status(400).json({err:true,message:"Incorrect Password ."})
     }
 
-    const token = jwt.sign({ id: user._id },config.privateKey, { expiresIn: '1d' });
+    const token = jwt.sign({ id: user._id },process.env.privateKey, { expiresIn: '1d' });
     return res.status(200).json({err:false,token,message:"User Logged in."})
 
 })

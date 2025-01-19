@@ -5,7 +5,7 @@ function checkAuth(req,res,next){
     if(!token){
         return res.status(403).json({err:true,json:{message:"Unauthorized"}})
     }
-    jwt.verify(token, config.privateKey, (err, userId) => {
+    jwt.verify(token, process.env.privateKey, (err, userId) => {
         if (err) {
             return res.status(403).json({err:true,json:{message:"Unauthorized"}});
         }
