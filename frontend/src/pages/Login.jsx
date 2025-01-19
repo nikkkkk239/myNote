@@ -77,7 +77,7 @@ function Login() {
           <button type='submit'>Login</button>
         </div>
         <div className='para'>
-          Don't have an account?<span onClick={()=>navigate('/register')}>Register.</span> 
+          Don't have an account?<span onClick={()=>navigate('/')}>Register.</span> 
         </div>
       </form>
     </div>

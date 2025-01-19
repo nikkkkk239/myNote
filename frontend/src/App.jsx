@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/register' element={<Register/>}/>
+        <Route path='/' element={<Register/>}/>
         <Route path="/dashboard" element={<Home currentUser={currentUser} notes={notes} setCurrentUser={setCurrentUser} isAnimation={isAnimation} setIsAnimation={setIsAnimation} setNotes={setNotes} setModalType={setModalType} modalType={modalType} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} setEditNote={setEditNote} editNote={editNote} noteToBeSearched={noteToBeSearched} setNoteToBeSearched={setNoteToBeSearched} isSearchBtnClicked={isSearchBtnClicked} setIsSearchBtnClicked={setIsSearchBtnClicked}/>}>
           <Route index path='/dashboard' element={<NotePage currentUser={currentUser} notes={notes} setCurrentUser={setCurrentUser} setNotes={setNotes} setModalType={setModalType} modalType={modalType} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} setEditNote={setEditNote} editNote={editNote} setNoteToBeSearched={setNoteToBeSearched} isSearchBtnClicked={isSearchBtnClicked} setIsSearchBtnClicked={setIsSearchBtnClicked}/>}/>
 
