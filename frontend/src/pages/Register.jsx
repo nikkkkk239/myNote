@@ -38,7 +38,7 @@ function Register() {
       fullName,email,password
     }
     try {
-      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/register`,{
+      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}user/register`,{
         method:'POST',
         headers:{
           "Content-Type":"application/json"

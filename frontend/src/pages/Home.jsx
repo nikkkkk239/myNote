@@ -24,7 +24,7 @@ function Home({currentUser,setCurrentUser,isAnimation,setIsAnimation,notes,setNo
       try {
 
         console.log("Token from home ",token)
-        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/getUser`,{
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}user/getUser`,{
           method:"GET",
           headers:{
             "Authorization":`Bearer ${token}`
@@ -45,7 +45,7 @@ function Home({currentUser,setCurrentUser,isAnimation,setIsAnimation,notes,setNo
     func()
     const fun =async ()=>{
       try {
-        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/note/getAllNotes`,{
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}note/getAllNotes`,{
           method:"GET",
           headers:{
             "Authorization":`Bearer ${token}`
