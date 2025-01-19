@@ -14,7 +14,11 @@ const PORT = process.env.PORT || 8000;
 mongoose.connect(process.env.connectionString).then(()=>console.log("DataBase connected.")).catch((error)=>{console.log("Error while connecting mongodb .",error)});
 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+    origin:process.env.FRONTEND_URL,
+    methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 
 
