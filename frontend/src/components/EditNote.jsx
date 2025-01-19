@@ -30,7 +30,7 @@ function EditNote({handleModalClose,currentUser,setEditNote,editNote,notes,setNo
       }
       setError("")
       try {
-        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}}note/update/${editNote._id}`,{
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}note/update/${editNote._id}`,{
           method:"PUT",
           headers:{
             "Content-Type" :"application/json",
